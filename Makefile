@@ -1,8 +1,8 @@
 all:
-		ninja
+	ninja
 
 install:
-		install -v -b -B $(date) -o root -g wheel -m 644 build/hosts_combined /etc/hosts
+	install -v -b -o root -g wheel -m 644 build/hosts_combined /etc/hosts
 
 clean:
-		ninja -t clean
+	ninja -t clean
