@@ -15,10 +15,6 @@ build $builddir/hosts_someonewhocares: $
   download
   url = http://someonewhocares.org/hosts/zero/hosts
 
-build $builddir/hosts_osxparanoia: $
-  download
-  url = https://raw.githubusercontent.com/l1k/osxparanoia/master/hosts
-
 build $builddir/hosts_stevenblack: $
   download
   url = https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
@@ -31,7 +27,6 @@ build $builddir/hosts_combined: $
   combine $
     $builddir/hosts_orig $
     $builddir/hosts_someonewhocares $
-    $builddir/hosts_osxparanoia $
     $builddir/hosts_stevenblack
 
 default $builddir/hosts_combined
